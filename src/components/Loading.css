@@ -49,3 +49,10 @@
   from, to {border-color: transparent;}
   50% {border-color: black;}
 }
+
+@media only screen and (max-width: 450px) {
+  @keyframes type {
+    from {width: 0;}
+    to {width: 100%;}
+  }
+}

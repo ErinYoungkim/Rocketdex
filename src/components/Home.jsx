@@ -62,9 +62,9 @@ const Home = () => {
     }
 
     return (
-        <div className="App">
+        <div className="home-container">
         
-          <div className="red-container left">
+          <div id="red-container-left" className="red-container">
           <div className="search-bar-container">
           <SearchBar onEnter={handleSearch} />
           {searchResult.name && (
@@ -81,7 +81,7 @@ const Home = () => {
                   <LeftSideButton/>
                   <DPadButtons/>
                </div>
-               <div className="red-container right">
+               <div id="red-container-right" className="red-container">
                 <InfoCard searchResult={searchResult}/>
                   </div>
           </div>
