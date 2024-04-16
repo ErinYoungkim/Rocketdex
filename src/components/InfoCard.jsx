@@ -13,7 +13,7 @@ export const InfoCard = (props) => {
             <p>ID: {searchResult.id}</p>
             <p>Weight: {searchResult.weight}</p>
             <p>Height: {searchResult.height}</p>
-            <img src={searchResult.imageUrl} alt={searchResult.name} />
+            {/* <img src={searchResult.imageUrl} alt={searchResult.name} /> */}
             </div>
         )}
         </div>

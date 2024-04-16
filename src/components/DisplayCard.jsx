@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import {Loading} from '../components/Loading.jsx'
 
-export const DisplayCard = ({searchResult}) => {
-    
+export const DisplayCard = (props) => {
+  const { searchResult } = props;
     //LOADING SCREEN
   const [loading, setLoading] = useState(false);
 
@@ -16,16 +16,17 @@ export const DisplayCard = ({searchResult}) => {
     }, 5000)
   }, [])
 
-    return (
-        <div className="blue-container">
-            {loading ? (
-              <Loading loading={loading}/>
-            ) : (
-            <>
-             <h1>{searchResult}</h1>
-            <img className="placeholder-img" src='https://placehold.co/600x400' alt='placeholder'/>
-            </>
-        )}
-        </div>
-    )
+  return (
+    <div className="blue-container">
+      {loading ? (
+        <Loading loading={loading}/>
+      ) : (
+        searchResult && (
+          <div>
+            <img src={searchResult.imageUrl} alt={searchResult.name} />
+          </div>
+        )
+      )}
+    </div>
+  );
 }

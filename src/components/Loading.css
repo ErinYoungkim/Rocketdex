@@ -42,7 +42,7 @@
 
 @keyframes type {
   from {width: 0;}
-  to {width: 80%;}
+  to {width: 40%;}
 }
 
 @keyframes blink {
@@ -50,9 +50,16 @@
   50% {border-color: black;}
 }
 
+@media only screen and (min-width: 451) and (max-width: 991px) {
+  @keyframes type {
+    from {width: 0;}
+    to {width: 40%;}
+  }
+}
+
 @media only screen and (max-width: 450px) {
   @keyframes type {
     from {width: 0;}
-    to {width: 100%;}
+    to {width: 80%;}
   }
 }

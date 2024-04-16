@@ -67,7 +67,7 @@ const Home = () => {
           <div id="red-container-left" className="red-container">
           <div className="search-bar-container">
           <SearchBar onEnter={handleSearch} />
-          {searchResult.name && (
+          {/* {searchResult.name && (
             <div>
               <h1>{searchResult.name}</h1>
               <p>Entry Number: {searchResult.id}</p>
@@ -75,9 +75,9 @@ const Home = () => {
               <p>Weight: {searchResult.weight}</p>
               <p>Height: {searchResult.height}</p>
               </div>
-          )}
+          )} */}
           </div>
-                  <DisplayCard/>
+                  <DisplayCard searchResult={searchResult}/>
                   <LeftSideButton/>
                   <DPadButtons/>
                </div>
