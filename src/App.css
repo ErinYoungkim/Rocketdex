@@ -1,3 +1,7 @@
+/* body {
+  background-color: black;
+  tba
+} */
 
 .App {
   display: flex;
@@ -51,7 +55,7 @@
   border: 4px black solid;
 }
 
-.blue-container img {
+.placeholder-img {
   height: 75%;
   width: 75%;
 }
